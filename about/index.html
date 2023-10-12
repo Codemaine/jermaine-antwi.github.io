@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" data-theme="light" style="color-scheme: light;">
+
+<head>
+  <link rel="icon" data-savepage-href="https://framerusercontent.com/sites/icons/default-favicon.v3.png"
+    href="data:image/png;base64,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">
+  <meta charset="utf-8">
+
+
+
+  <!-- End of headStart -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="generator" content="Framer 25dafa9">
+  <title>About Me - Jermaine Antwi</title>
+  <meta name="description" content="Showcase your talent with Sigma sleek and simlple portfolio website template">
+  <meta name="framer-search-index"
+    content="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/searchIndex-li228cr4.yd.json">
+  <link rel="icon" href="../favicon.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sigma Portfolio Template">
+  <meta property="og:description"
+    content="Showcase your talent with Sigma sleek and simlple portfolio website template">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sigma Portfolio Template">
+  <meta name="twitter:description"
+    content="Showcase your talent with Sigma sleek and simlple portfolio website template">
+
+  <link rel="canonical" data-savepage-href="https://cwsigma.framer.website/" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-BPVHATY6.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-ELYU6EKT.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/6eRn8fcCQZZu7vg0nQ-XXHBzw_z9cNE9JWEZ5jF4t_s.FLI3TEKO.mjs"
+    href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-Y774BBZT.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-4CZC5QON.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-VEKKHYHT.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-SHR2HIBP.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-MLL3SQCB.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-LXSJZCNW.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-WB2KFHW3.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-HQJGPMCG.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-GSWYJTUW.mjs" href="">
+  <link rel="modulepreload"
+    data-savepage-href="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/chunk-42U43NKG.mjs" href="">
+  <link rel="stylesheet" href="./style.css">
+
+  <style id="savepage-cssvariables">
+    :root {}
+  </style>
+  <script id="savepage-shadowloader" type="text/javascript">
+    "use strict";
+    window.addEventListener("DOMContentLoaded",
+      function (event) {
+        savepage_ShadowLoader(5);
+      }, false);
+    function savepage_ShadowLoader(c) { createShadowDOMs(0, document.documentElement); function createShadowDOMs(a, b) { var i; if (b.localName == "iframe" || b.localName == "frame") { if (a < c) { try { if (b.contentDocument.documentElement != null) { createShadowDOMs(a + 1, b.contentDocument.documentElement) } } catch (e) { } } } else { if (b.children.length >= 1 && b.children[0].localName == "template" && b.children[0].hasAttribute("data-savepage-shadowroot")) { b.attachShadow({ mode: "open" }).appendChild(b.children[0].content); b.removeChild(b.children[0]); for (i = 0; i < b.shadowRoot.children.length; i++)if (b.shadowRoot.children[i] != null) createShadowDOMs(a, b.shadowRoot.children[i]) } for (i = 0; i < b.children.length; i++)if (b.children[i] != null) createShadowDOMs(a, b.children[i]) } } }
+  </script>
+  <meta name="savepage-url" content="https://cwsigma.framer.website/about">
+  <meta name="savepage-title" content="Sigma Portfolio Template">
+  <meta name="savepage-pubdate" content="Unknown">
+  <meta name="savepage-from" content="https://cwsigma.framer.website/about">
+  <meta name="savepage-date" content="Sun Jul 30 2023 15:18:21 GMT+0100 (British Summer Time)">
+  <meta name="savepage-state"
+    content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+  <meta name="savepage-version" content="33.9">
+  <meta name="savepage-comments" content="">
+</head>
+
+<body class="chakra-ui-light framer-body-KiBYf0Prf">
+  <div id="coursology-root" style="height: auto;"><template data-savepage-shadowroot="">
+      <div><span id="__chakra_env" hidden=""></span></div>
+      <style data-savepage-sheetrules="" data-emotion="coursology-global" data-s="">
+        html {
+          line-height: 1.5;
+          text-size-adjust: 100%;
+          font-family: system-ui, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizelegibility;
+          touch-action: manipulation;
+        }
+
+        body {
+          position: relative;
+          min-height: 100%;
+          margin: 0px;
+          font-feature-settings: "kern";
+        }
+
+        :where(*) {
+          border-width: 0px;
+          border-style: solid;
+          box-sizing: border-box;
+          overflow-wrap: break-word;
+        }
+
+        main {
+          display: block;
+        }
+
+        hr {
+          border-top-width: 1px;
+          box-sizing: content-box;
+          height: 0px;
+          overflow: visible;
+        }
+
+        :where(pre, code, kbd, samp) {
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 1em;
+        }
+
+        a {
+          background-color: transparent;
+          color: inherit;
+          text-decoration: inherit;
+        }
+
+        abbr[title] {
+          border-bottom: none;
+          text-decoration: underline dotted;
+        }
+
+        :where(b, strong) {
+          font-weight: bold;
+        }
+
+        small {
+          font-size: 80%;
+        }
+
+        :where(sub, sup) {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline;
+        }
+
+        sub {
+          bottom: -0.25em;
+        }
+
+        sup {
+          top: -0.5em;
+        }
+
+        img {
+          border-style: none;
+        }
+
+        :where(button, input, optgroup, select, textarea) {
+          font-family: inherit;
+          font-size: 100%;
+          line-height: 1.15;
+          margin: 0px;
+        }
+
+        :where(button, input) {
+          overflow: visible;
+        }
+
+        :where(button, select) {
+          text-transform: none;
+        }
+
+        :where() {
+          border-style: none;
+          padding: 0px;
+        }
+
+        fieldset {
+          padding: 0.35em 0.75em 0.625em;
+        }
+
+        legend {
+          box-sizing: border-box;
+          color: inherit;
+          display: table;
+          max-width: 100%;
+          padding: 0px;
+          white-space: normal;
+        }
+
+        progress {
+          vertical-align: baseline;
+        }
+
+        textarea {
+          overflow: auto;
+        }
+
+        :where([type="checkbox"], [type="radio"]) {
+          box-sizing: border-box;
+          padding: 0px;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          appearance: none !important;
+        }
+
+        input[type="number"] {}
+
+        input[type="search"] {
+          appearance: textfield;
+          outline-offset: -2px;
+        }
+
+        input[type="search"]::-webkit-search-decoration {
+          appearance: none !important;
+        }
+
+        ::-webkit-file-upload-button {
+          appearance: button;
+          font: inherit;
+        }
+
+        details {
+          display: block;
+        }
+
+        summary {
+          display: list-item;
+        }
+
+        template {
+          display: none;
+        }
+
+        [hidden] {
+          display: none !important;
+        }
+
+        :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+          margin: 0px;
+        }
+
+        button {
+          background: transparent;
+          padding: 0px;
+        }
+
+        fieldset {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        :where(ol, ul) {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        textarea {
+          resize: vertical;
+        }
+
+        :where(button, [role="button"]) {
+          cursor: pointer;
+        }
+
+        table {
+          border-collapse: collapse;
+        }
+
+        :where(h1, h2, h3, h4, h5, h6) {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+
+        :where(button, input, optgroup, select, textarea) {
+          padding: 0px;
+          line-height: inherit;
+          color: inherit;
+        }
+
+        :where(img, svg, video, canvas, audio, iframe, embed, object) {
+          display: block;
+        }
+
+        :where(img, video) {
+          max-width: 100%;
+          height: auto;
+        }
+
+        [data-js-focus-visible] :focus:not([data-focus-visible-added]):not([data-focus-visible-disabled]) {
+          outline: none;
+          box-shadow: none;
+        }
+
+        :root,
+        :host {
+          --chakra-vh: 100vh;
+        }
+
+        @supports (height: -webkit-fill-available) {
+
+          :root,
+          :host {
+            --chakra-vh: -webkit-fill-available;
+          }
+        }
+
+        @supports (height: -moz-fill-available) {
+
+          :root,
+          :host {
+            --chakra-vh: -moz-fill-available;
+          }
+        }
+
+        @supports (height: 100dvh) {
+
+          :root,
+          :host {
+            --chakra-vh: 100dvh;
+          }
+        }
+      </style>
+      <style data-savepage-sheetrules="" data-emotion="coursology-global" data-s="">
+        body {
+          font-family: var(--chakra-fonts-body);
+          color: var(--chakra-colors-chakra-body-text);
+          background: var(--chakra-colors-chakra-body-bg);
+          transition-property: background-color;
+          transition-duration: var(--chakra-transition-duration-normal);
+          line-height: var(--chakra-lineHeights-base);
+        }
+
+        ::-webkit-input-placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+
+        ::placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+
+        *,
+        ::before,
+        ::after {
+          border-color: var(--chakra-colors-chakra-border-color);
+        }
+      </style>
+    </template></div>
+  <script data-savepage-type="" type="text/plain" async="" data-savepage-src="https://events.framer.com/script"
+    data-fid="800bf7f87ae75f578f806e0edac20a977bd2d0154fa0f7dc6cf95c75565350db"></script>
+
+
+  <!-- End of bodyStart -->
+  <div id="main" data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;augiA20Il&quot;}"
+    data-framer-ssr-released-at="2023-05-08T09:00:54.216Z" data-framer-page-optimized-at="2023-05-24T18:50:11.105Z">
+    <div class="framer-jNtvA framer-hCXmy framer-VN8gs framer-eYcFR framer-ImK3C framer-9oN8J"
+      style="display: contents;">
+      <div class="framer-hxckeh" style="min-height: 100%; width: auto;">
+        <div class="framer-10otjql-container" style="transform: translateX(-50%);">
+          <div class="framer-RJM5k framer-ImK3C framer-AJQMA framer-v-bffk9j" tabindex="0" style="display: contents;">
+            <div class="framer-bffk9j" data-framer-name="Desktop" style="width: 100%; opacity: 1;">
+              <div class="framer-1v03fx7-container" style="opacity: 1;">
+                <div data-framer-generated="true" class="framer-theYe framer-v-4aqyf4" tabindex="0"
+                  style="display: contents;">
+                  <a class="framer-4aqyf4 framer-fe2yac" data-framer-name="Logo" href="/"
+                    style="height: 100%; width: 100%; opacity: 1;">
+                    <div data-framer-component-type="SVG" class="framer-wzka1l"
+                      style="image-rendering: pixelated; flex-shrink: 0; fill: rgb(0, 0, 0); color: rgb(0, 0, 0); opacity: 1;">
+                      <div class="svgContainer" style="width: 100%; height: 100%; aspect-ratio: inherit;">
+                        <img src="../favicon.png" style="width: 100%; height: 100%;" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="framer-rv3b4c" style="opacity: 1;">
+                <div class="framer-11mp5zk" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"><a
+                      class="framer-text framer-styles-preset-1wicq5s" data-styles-preset="ro7OPezbn"
+                      >About</a></p>
+                </div>
+                <div class="framer-1i2q9r0" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"><a
+                      class="framer-text framer-styles-preset-1wicq5s" data-styles-preset="ro7OPezbn"
+                      data-savepage-href="./works" href="https://cwsigma.framer.website/works">Works</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="framer-1hyemxv">
+          <div class="framer-5w01a1" data-border="true" data-framer-name="Userpic" name="Userpic">
+            <div data-framer-background-image-wrapper="true"
+              style="position: absolute; pointer-events: none; user-select: none; border-radius: inherit; inset: 0px;">
+              <div style="display: contents; border-radius: inherit; pointer-events: none;"><img
+                  data-savepage-currentsrc="https://framerusercontent.com/images/e8zT4LyHeajwwr1vjhthqo9ptc.png?scale-down-to=512"
+                  data-savepage-src="https://framerusercontent.com/images/e8zT4LyHeajwwr1vjhthqo9ptc.png"
+                  src="./profile-pic.jpeg" alt="" srcset="" sizes="114px"
+                  style="pointer-events: none; user-select: none; display: block; width: 100%; height: 100%; border-radius: inherit; object-position: center center; object-fit: cover; image-rendering: auto; padding: 8px;">
+              </div>
+            </div>
+          </div>
+          <div class="framer-7g68lw" data-framer-name="Title" name="Title">
+            <div class="framer-1fgrmln" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h1 class="framer-text framer-styles-preset-3nqyhf" data-styles-preset="YAP816Y5n">Hey, I'm Jermaine</h1>
+            </div>
+            <div class="framer-1f06ht5-container">
+              <div data-framer-generated="true" class="framer-GfjqQ framer-kpqpO framer-v-10c30h7" tabindex="0"
+                style="display: contents;">
+                <div class="framer-yht52a" data-border="true" data-framer-name="Primary / Lead icon"
+                  style="--border-bottom-width: 1px; --border-color: var(--token-436a80b5-42e0-421b-8c4c-febbae41106d, rgb(231, 215, 251)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-a0ad04b0-01d9-481f-a49d-c46fa05f658b, rgb(249, 245, 254)); height: 100%; border-radius: 20px; opacity: 1;">
+                  <div class="framer-13o6wov" data-framer-component-type="RichTextContainer"
+                    style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --framer-paragraph-spacing: 0px; --extracted-r6o4lv: var(--token-d9caefdb-24ef-43fc-a7ef-f060ecc05e9e, rgb(132, 66, 211)); transform: none; opacity: 1;">
+                    <p class="framer-text framer-styles-preset-sx2vhx" data-styles-preset="dXHcv4VLo"
+                      style="--framer-text-color: var(--extracted-r6o4lv);">Open to work</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="framer-15ngjrz">
+            <div class="framer-yfy4zo" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h3 class="framer-text framer-styles-preset-12lj5ox" data-styles-preset="YckFIlg3V">My Mission</h3>
+            </div>
+            <div class="framer-v6tiy4" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">My passion for design and creativity has led me to work in various fields, from graphic design and branding to product design and user experience.</h2>
+            </div>
+          </div>
+          <div class="framer-1ay6kfu">
+            <div class="framer-aleout" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h3 class="framer-text framer-styles-preset-12lj5ox" data-styles-preset="YckFIlg3V">Experience</h3>
+            </div>
+            <div class="framer-1xpjln7" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">5+ years of experience in web design with a focus on creating visually appealing and user-friendly websites for clients in various industries. Strong project management skills, ability to effectively communicate with cross-functional teams, and a keen eye for detail. Successfully delivered over 50 projects, resulting in increased online traffic and customer satisfaction. Track record of staying current with industry trends and incorporating innovative design solutions to meet client needs.</h2>
+            </div>
+          </div>
+          <div class="framer-1bxa2o3">
+            <div class="framer-1k0d6xx" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h3 class="framer-text framer-styles-preset-12lj5ox" data-styles-preset="YckFIlg3V">Work History</h3>
+            </div>
+            <div class="framer-1vvb9ht">
+              <div class="framer-1nab4me">
+                <div class="framer-jg7xg6" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">UX/UI Designer</h2>
+                </div>
+                <div class="framer-unv8kk" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt">June 2020 — Present</p>
+                </div>
+                <div class="framer-1qypmm" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-14qzuaw" data-styles-preset="TIdJ6nrSL">Craftwork</p>
+                </div>
+              </div>
+              <div class="framer-1pwtsju">
+                <div class="framer-yw52p6" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">Web Designer</h2>
+                </div>
+                <div class="framer-47k5al" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt">August 2018 — June 2020</p>
+                </div>
+                <div class="framer-1cv6rup" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-14qzuaw" data-styles-preset="TIdJ6nrSL">Freelance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="framer-172sfg0">
+            <div class="framer-1ydbryl" data-framer-component-type="RichTextContainer"
+              style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+              <h3 class="framer-text framer-styles-preset-12lj5ox" data-styles-preset="YckFIlg3V">Education</h3>
+            </div>
+            <div class="framer-1scc582">
+              <div class="framer-1t5feqm">
+                <div class="framer-d5sc65" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">Bachelor of Science in Computer Science</h2>
+                </div>
+                <div class="framer-1f6wy7w" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt">June 2022</p>
+                </div>
+                <div class="framer-1kwc3bq" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-14qzuaw" data-styles-preset="TIdJ6nrSL">XYZ University</p>
+                </div>
+              </div>
+              <div class="framer-1fuf8k6">
+                <div class="framer-10bfxnh" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">Courses in Web Design &amp; Development</h2>
+                </div>
+                <div class="framer-xb1nn6" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt">September 2022</p>
+                </div>
+                <div class="framer-1cowjcj" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-14qzuaw" data-styles-preset="TIdJ6nrSL">Udemy</p>
+                </div>
+              </div>
+              <div class="framer-1xd2rdu">
+                <div class="framer-1pkl8sa" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <h2 class="framer-text framer-styles-preset-bq91xx" data-styles-preset="VaKcnkMJV">Certified Professional in Web Design</h2>
+                </div>
+                <div class="framer-svqaqg" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt">December 2021</p>
+                </div>
+                <div class="framer-myg8km" data-framer-component-type="RichTextContainer"
+                  style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;">
+                  <p class="framer-text framer-styles-preset-14qzuaw" data-styles-preset="TIdJ6nrSL">W3C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="framer-195j7uk" data-framer-name="Links" name="Links">
+            <div class="framer-21bvpi" data-framer-name="Links" name="Links">
+              <div class="framer-yizkby-container">
+                <div class="framer-A42NU framer-ImK3C framer-v-18aegb1" tabindex="0" style="display: contents;"><a
+                    class="framer-1szpjxr framer-xf2qpv" data-framer-name="Secondary" data-border="true"
+                    href="https://twitter.com/craftworkdesign" rel="noopener"
+                    style="--border-bottom-width: 1px; --border-color: var(--token-342cec34-93a7-47cd-a21f-fc2bf700cce3, rgb(228, 228, 228)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-e9d3058c-f246-47bb-88f0-01d1f480ec4b, rgb(255, 255, 255)); height: 100%; border-radius: 20px; opacity: 1;">
+                    <div class="framer-bjounk" data-framer-name="Container" style="opacity: 1;">
+                      <div class="framer-x0abrr" data-framer-component-type="RichTextContainer"
+                        style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --extracted-r6o4lv: var(--token-3c25d1f7-211a-4f0c-a3e0-9e5a128d3596, rgb(115, 115, 115)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                          style="--framer-text-color: var(--extracted-r6o4lv);">Linkedin</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="framer-1kfa6n9-container">
+                <div class="framer-A42NU framer-ImK3C framer-v-18aegb1" tabindex="0" style="display: contents;"><a
+                    class="framer-1szpjxr framer-xf2qpv" data-framer-name="Secondary" data-border="true"
+                    href="https://twitter.com/craftworkdesign" rel="noopener"
+                    style="--border-bottom-width: 1px; --border-color: var(--token-342cec34-93a7-47cd-a21f-fc2bf700cce3, rgb(228, 228, 228)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-e9d3058c-f246-47bb-88f0-01d1f480ec4b, rgb(255, 255, 255)); height: 100%; border-radius: 20px; opacity: 1;">
+                    <div class="framer-bjounk" data-framer-name="Container" style="opacity: 1;">
+                      <div class="framer-x0abrr" data-framer-component-type="RichTextContainer"
+                        style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --extracted-r6o4lv: var(--token-3c25d1f7-211a-4f0c-a3e0-9e5a128d3596, rgb(115, 115, 115)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                          style="--framer-text-color: var(--extracted-r6o4lv);">Github</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="framer-xojon9-container">
+                <div class="framer-A42NU framer-ImK3C framer-v-18aegb1" tabindex="0" style="display: contents;"><a
+                    class="framer-1szpjxr framer-xf2qpv" data-framer-name="Secondary" data-border="true"
+                    href="https://dribbble.com/craftwork" rel="noopener"
+                    style="--border-bottom-width: 1px; --border-color: var(--token-342cec34-93a7-47cd-a21f-fc2bf700cce3, rgb(228, 228, 228)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-e9d3058c-f246-47bb-88f0-01d1f480ec4b, rgb(255, 255, 255)); height: 100%; border-radius: 20px; opacity: 1;">
+                    <div class="framer-bjounk" data-framer-name="Container" style="opacity: 1;">
+                      <div class="framer-x0abrr" data-framer-component-type="RichTextContainer"
+                        style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --extracted-r6o4lv: var(--token-3c25d1f7-211a-4f0c-a3e0-9e5a128d3596, rgb(115, 115, 115)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                          style="--framer-text-color: var(--extracted-r6o4lv);">Resume</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="framer-vpuzs8-container">
+                <div class="framer-A42NU framer-ImK3C framer-v-152i1tt" tabindex="0" style="display: contents;"><a
+                    class="framer-1szpjxr framer-xf2qpv" data-framer-name="Accent" data-border="true"
+                    data-savepage-href="https://craftwork.design" href="https://craftwork.design/" rel="noopener"
+                    style="--border-bottom-width: 1px; --border-color: var(--token-436a80b5-42e0-421b-8c4c-febbae41106d, rgb(231, 215, 251)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-a0ad04b0-01d9-481f-a49d-c46fa05f658b, rgb(249, 245, 254)); height: 100%; border-radius: 20px; opacity: 1;">
+                    <div class="framer-bjounk" data-framer-name="Container" style="opacity: 1;">
+                      <div class="framer-x0abrr" data-framer-component-type="RichTextContainer"
+                        style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --extracted-r6o4lv: var(--token-d9caefdb-24ef-43fc-a7ef-f060ecc05e9e, rgb(132, 66, 211)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                          style="--framer-text-color: var(--extracted-r6o4lv);">Zest</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="framer-18c10ct-container">
+                <div class="framer-A42NU framer-ImK3C framer-v-18aegb1" tabindex="0" style="display: contents;"><a
+                    class="framer-1szpjxr framer-xf2qpv" data-framer-name="Secondary" data-border="true"
+                    style="--border-bottom-width: 1px; --border-color: var(--token-342cec34-93a7-47cd-a21f-fc2bf700cce3, rgb(228, 228, 228)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-e9d3058c-f246-47bb-88f0-01d1f480ec4b, rgb(255, 255, 255)); height: 100%; border-radius: 20px; opacity: 1;">
+                    <div class="framer-bjounk" data-framer-name="Container" style="opacity: 1;">
+                      <div class="framer-x0abrr" data-framer-component-type="RichTextContainer"
+                        style="outline: none; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; --extracted-r6o4lv: var(--token-3c25d1f7-211a-4f0c-a3e0-9e5a128d3596, rgb(115, 115, 115)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                          style="--framer-text-color: var(--extracted-r6o4lv);">jermaineantwi22@gmail.com</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="framer-18z1qgo-container">
+          <div class="framer-CCTmi framer-ImK3C framer-v-rhfgf4" tabindex="0" style="display: contents;">
+            <div class="framer-rhfgf4" data-framer-name="Footer"
+              style="background-color: rgb(255, 255, 255); height: 100%; width: 100%; opacity: 1;">
+              <div class="framer-1ba0qfe" data-framer-component-type="RichTextContainer"
+                style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-3c25d1f7-211a-4f0c-a3e0-9e5a128d3596, rgb(115, 115, 115)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: translate(-50%, -50%); opacity: 1;">
+                <p class="framer-text framer-styles-preset-21ogod" data-styles-preset="xZndidUCt"
+                  style="--framer-text-color: var(--extracted-r6o4lv);">© <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </div>
+  <div id="svg-templates" style="position: absolute; overflow: hidden; top: 0; left: 0; width: 0; height: 0">
+    <div id="container_svg1921341435_4152">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+        id="svg1921341435_4152">
+        <g clip-path="url(#svg1921341435_4152_clip0_331_3974)">
+          <mask id="svg1921341435_4152_mask0_331_3974" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+            width="32" height="32">
+            <circle cx="16" cy="16" r="16" fill="black"></circle>
+          </mask>
+          <g mask="url(#svg1921341435_4152_mask0_331_3974)">
+            <g filter="url(#svg1921341435_4152_filter0_i_331_3974)">
+              <circle cx="16" cy="16" r="16" fill="url(#svg1921341435_4152_paint0_angular_331_3974)"></circle>
+            </g>
+            <g filter="url(#svg1921341435_4152_filter1_ddddii_331_3974)">
+              <circle cx="16" cy="16" r="6" fill="white"></circle>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <filter id="svg1921341435_4152_filter0_i_331_3974" x="0" y="0" width="32" height="33"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_3974"></feBlend>
+          </filter>
+          <filter id="svg1921341435_4152_filter1_ddddii_331_3974" x="-28" y="-1" width="88" height="88"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="1.22278"></feOffset>
+            <feGaussianBlur stdDeviation="0.860472"></feGaussianBlur>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.324022 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_331_3974"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3.38082"></feOffset>
+            <feGaussianBlur stdDeviation="2.37909"></feGaussianBlur>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.465 0"></feColorMatrix>
+            <feBlend mode="normal" in2="effect1_dropShadow_331_3974" result="effect2_dropShadow_331_3974"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="8.13971"></feOffset>
+            <feGaussianBlur stdDeviation="5.72794"></feGaussianBlur>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.605978 0"></feColorMatrix>
+            <feBlend mode="normal" in2="effect2_dropShadow_331_3974" result="effect3_dropShadow_331_3974"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="27"></feOffset>
+            <feGaussianBlur stdDeviation="19"></feGaussianBlur>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.93 0"></feColorMatrix>
+            <feBlend mode="normal" in2="effect3_dropShadow_331_3974" result="effect4_dropShadow_331_3974"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_331_3974" result="shape"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="0.5"></feOffset>
+            <feGaussianBlur stdDeviation="0.25"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="shape" result="effect5_innerShadow_331_3974"></feBlend>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset dy="-0.5"></feOffset>
+            <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"></feColorMatrix>
+            <feBlend mode="normal" in2="effect5_innerShadow_331_3974" result="effect6_innerShadow_331_3974"></feBlend>
+          </filter>
+          <radialGradient id="svg1921341435_4152_paint0_angular_331_3974" cx="0" cy="0" r="1"
+            gradientUnits="userSpaceOnUse" gradientTransform="translate(16 16) rotate(-90) scale(16)">
+            <stop stop-color="#A4A4A4"></stop>
+            <stop offset="1" stop-color="white"></stop>
+          </radialGradient>
+          <clipPath id="svg1921341435_4152_clip0_331_3974">
+            <rect width="32" height="32" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <script data-savepage-type="" type="text/plain" data-framer-appear-animation="no-preference"></script>
+  <script data-savepage-type="module" type="text/plain" data-framer-bundle=""
+    data-savepage-src="https://framerusercontent.com/sites/2ZqEOof1evAXwoYRIAxWif/_script0.ZY2XAOIJ.mjs"></script>
+
+  <!-- End of bodyEnd -->
+
+
+  <div class="chakra-portal">
+    <div role="region" aria-live="polite" id="chakra-toast-manager-top"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);">
+    </div>
+    <div role="region" aria-live="polite" id="chakra-toast-manager-top-left"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);">
+    </div>
+    <div role="region" aria-live="polite" id="chakra-toast-manager-top-right"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);">
+    </div>
+    <div role="region" aria-live="polite" id="chakra-toast-manager-bottom-left"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);">
+    </div>
+    <div role="region" aria-live="polite" id="chakra-toast-manager-bottom"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);">
+    </div>
+    <div role="region" aria-live="polite" id="chakra-toast-manager-bottom-right"
+      style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);">
+    </div>
+  </div>
+</body>
+
+</html>
