@@ -32,12 +32,19 @@
   </script>
   <script id="savepage-shadowloader" type="text/javascript">
     "use strict"; 
-    window.addEventListener("DOMContentLoaded", function (event) {
-      const loader = document.getElementById('loader');
+    document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+              const loader = document.getElementById('loader');
     const main = document.getElementById('main');
      loader.style.display = 'none';
      main.style.display = 'block';
-    }, false);
+            } else {
+                document.querySelector(
+                  "#spinner").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
   </script>
 </head>
 <body>
