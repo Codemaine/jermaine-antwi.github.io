@@ -31,23 +31,15 @@
   <script>
   </script>
   <script id="savepage-shadowloader" type="text/javascript">
-    "use strict"; 
-    document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
+   function hideloader() {
               const loader = document.getElementById('loader');
     const main = document.getElementById('main');
      loader.style.display = 'none';
      main.style.display = 'block';
-            } else {
-                document.querySelector(
-                  "#spinner").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
             }
-        };
   </script>
 </head>
-<body onload="alert('LOADED!')">
+<body onload="hideloader();">
 <div id='loader' style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;"><div class="custom-loader"></div></div>
 <div style="display:none !important;" id="main" class="chakra-ui-light framer-body-augiA20Il">
   
