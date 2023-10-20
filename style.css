@@ -4817,17 +4817,18 @@ navigationcontainer [data-framer-component-type="NavigationContainer"]>*,
 .framer-DOQUW .framer-phurh2,
 .framer-DOQUW .framer-1xkneya,
 .framer-DOQUW .framer-1329bas {
-    place-content: center;
-    align-items: center;
+    place-content: start;
+    align-items: start;
     display: flex;
     flex: 0 0 auto;
     flex-flow: row;
+    flex-wrap: wrap;
     gap: 8px;
     height: min-content;
     overflow: hidden;
     padding: 0px;
     position: relative;
-    width: min-content;
+    width: 100%;
 }
 
 .framer-DOQUW .framer-1yfpxl3-container,
