@@ -16,7 +16,6 @@ import Writing from "@/sections/homepage/Writing";
 
 
 export default function Home() {
-  
   return (
     <div>
       <Navbar />
