@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import nightwind from 'nightwind/helper'
 
 const Navbar = () => {
     const links = [
@@ -26,6 +27,7 @@ const Navbar = () => {
     <div className="hidden md:flex flex-row items-center gap-10">
       {links.map((item) => (
         <p className="text-white text-xl cursor-pointer">{item.label}</p>))}
+        {/* <p onClick={() => nightwind.toggle() }>toggle</p> */}
     </div>
    </div>
   )

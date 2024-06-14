@@ -1,5 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import nightwind from "nightwind/helper";
 
 const defaultFont = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="icon" href="/images/jermaine.logo.jpg" sizes="any" />
+      <script dangerouslySetInnerHTML={{ __html: nightwind.init() }}></script>
       <body className={defaultFont.className}>{children}</body>
     </html>
   );

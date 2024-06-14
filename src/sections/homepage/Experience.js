@@ -16,7 +16,7 @@ const Experience = () => {
         {
             employeer: 'Classify',
             role: 'Flutter Developer',
-            duration: 'Dec 2023 - today'
+            duration: 'Dec 2023 - June 2024'
         },
         {
             employeer: 'Freelance',

@@ -13,6 +13,7 @@ import Projects from "@/sections/homepage/Projects";
 import Skills from "@/sections/homepage/Skills";
 import Experience from "@/sections/homepage/Experience";
 import Writing from "@/sections/homepage/Writing";
+import About from "@/sections/homepage/About";
 
 
 export default function Home() {
@@ -42,15 +43,7 @@ export default function Home() {
       <div className="border-[0.3px] w-full border-slate-200" />
      <Writing />
       <div className="border-[0.3px] w-full border-slate-200" />
-      <main className="flex flex-col py-16 md:py-32 min-[1200px]:py-36 px-8 md:px-200 items-center">
-        <div className="w-full">
-          <p className={`${headingFont.className} text-[36px] md:text-[48px] min-[1200px]:text-[56px] w-full border-t-2 pt-3 border-t-black`}>About</p>
-        </div>
-        <div className="flex flex-col md:grid grid-cols-2 gap-8 min-[1200px]:gap-12 md:gap-32 mt-8 min-[1200px]:mt-12">
-          <p className="text-[24px] md:text-[28px] min-[1200px]:text-3xl font-medium leading-snug">I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.</p>
-          <p className="text-[20px] md:text-[22px] min-[1200px]:text-2xl leading-snug">I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.I’m Ben — a freelance digital product designer with 10 years of experience. I care a lot about using design for positive impact. Currently based in Lisbon, Portugal.</p>
-        </div>
-      </main>
+      <About />
       <div className="border-[0.3px] w-full border-slate-200" />
       <Experience />
       <div className="border-[0.3px] w-full border-slate-200" />
@@ -97,9 +90,9 @@ export default function Home() {
       </main>
       <div className="border-[0.3px] w-full border-slate-200" />
       <Newsletter />
-      <div className="aspect-[460/211] w-full bg-slate-600">
+      <div className="aspect-video w-full bg-slate-600">
       <MeshGradientRenderer
-          className="gradient !z-0 w-full opacity-85 h-auto aspect-[460/211]"
+          className="gradient !z-0 w-full opacity-85 h-auto aspect-video"
           colors={[
             "#2EA95A",
             "#445CA6",
@@ -109,16 +102,17 @@ export default function Home() {
           ]}
         />
       </div>
-      <div className="bg-[#EA4E44]/5 py-36 flex flex-row items-start justify-between px-20">
+      <div className="bg-[#EA4E44]/5 py-36 grid grid-cols-12 w-full px-20">
       <Image src="/images/navbar-logo.svg" className="rotate-12 cursor-pointer hover:rotate-0 invert ease-in-out duration-200" width={35} height={35} />
-        <div className="flex flex-col w-[40%] gap-8">
+        <div className="flex col-span-4 flex-col w-full gap-8">
         <p className="text-3xl">I'm Jermaine - a software engineer based in Accra & London</p>
         <button className="px-10 py-4 w-fit bg-black text-white rounded-lg">Email me</button>
         <p className="text-base text-slate-600 flex flex-row items-center gap-1"><span className="underline">Time Machine</span> <span className="text-xs font-normal text-slate-400">•</span> Built by maine <span className="text-xs font-normal text-slate-400">•</span> ©2024 to ∞</p>
         </div>
-        <div />
-        <div />
-        <div />
+        <div className="flex flex-col items-end col-span-2 gap-1.5 justify-center col-end-12">
+          <p className="text-4xl text-right italic">"Do everything in love".</p>
+          <p className="text-lg italic">1 Corinthians 16:14</p>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { headingFont } from '@/fonts'
 import React from 'react'
 
 const Skills = () => {
-    const skills_array = ["User Interface Design", "UX Design", "Web Design", "Mobile Dev"]
+    const skills_array = ["User Interface Design", "UX Design", "Web Design", "Mobile Dev", "Product Design"]
   return (
     <main className="py-16 md:py-32 min-[1200px]:py-36 px-8 md:px-20 flex flex-col gap-12">
     <div className="flex flex-col gap-8 min-[1200px]:gap-14 transition-all">
