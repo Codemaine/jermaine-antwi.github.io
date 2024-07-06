@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Oval } from "react-loader-spinner";
 import { validate } from 'react-email-validator';
 
-const Newsletter = () => {
+const Newsletter = ({ noTitle }) => {
   const [email, setEmail] = useState("");
   const [loading, setIsLoading] = useState(false);
   const [inputError, setInputError] = useState(false);
@@ -37,7 +37,7 @@ const Newsletter = () => {
   return (
   <main className="py-16 md:py-32 min-[1200px]:py-36 px-8 md:px-20 flex flex-col gap-8 min-[1200px]:gap-16">
         <div className="">
-          <p className={`${headingFont.className} text-[36px] md:text-[48px] min-[1200px]:text-[56px] border-t-2 pt-3 border-t-black`}>Email list</p>
+          <p className={`${headingFont.className} text-[36px] md:text-[48px] min-[1200px]:text-[56px] border-t-2 pt-3 ${!noTitle ? 'border-t-black' : 'border-t-slate-300'}`}>{!noTitle && 'Email list'}</p>
         </div>
         <div className="flex flex-col gap-10 min-[1200px]:gap-12">
           <p className={`${headingFont.className} text-[40px] md:text-[60px] min-[1200px]:text-[80px] leading-[1.1]`}>Get engineering insights and articles straight to your inbox</p>
