@@ -27,7 +27,7 @@ export default function Home() {
             "#F696A9"
           ]}
         />
-        <p className={`${headingFont.className} text-white mt-12 sm:pb-0 pb-[15%] z-10 text-[40px] md:text-[60px] min-[1200px]:text-[80px] leading-[1.1] w-full sm:px-0 px-8 sm:w-[65%]`}>Jermaine Antwi <br />Software Engineer</p>
+        <p className={`${headingFont.className} text-white mt-12 sm:pb-0 pb-[15%] z-[1] text-[40px] md:text-[60px] min-[1200px]:text-[80px] leading-[1.1] w-full sm:px-0 px-8 sm:w-[65%]`}>Jermaine Antwi <br />Software Engineer</p>
       </main>
       <main className="flex flex-col py-16 md:py-32 px-8 min-[1200px]:py-36 items-center">
         <p className="text-2xl md:text-3xl w-full md:w-4/6">Senior software engineer & product designer with 10 years of experience. Based in Ghana & London. Available for partnerships & collaborations.
