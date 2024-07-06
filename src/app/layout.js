@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/images/jermaine.logo.jpg" sizes="any" />
+      <link rel="icon" href="/images/favicon.svg" sizes="any" />
       <script dangerouslySetInnerHTML={{ __html: nightwind.init() }}></script>
       <body className={defaultFont.className}>{children}</body>
     </html>

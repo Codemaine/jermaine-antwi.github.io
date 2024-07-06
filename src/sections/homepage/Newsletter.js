@@ -39,7 +39,7 @@ const Newsletter = () => {
         <div className="">
           <p className={`${headingFont.className} text-[36px] md:text-[48px] min-[1200px]:text-[56px] border-t-2 pt-3 border-t-black`}>Email list</p>
         </div>
-        <div className="flex flex-col gap-10 min-[1200px]:gap-20">
+        <div className="flex flex-col gap-10 min-[1200px]:gap-12">
           <p className={`${headingFont.className} text-[40px] md:text-[60px] min-[1200px]:text-[80px] leading-[1.1]`}>Get engineering insights and articles straight to your inbox</p>
           <div className="flex flex-col gap-3">
             {!attemptedToSendEmail && <>
