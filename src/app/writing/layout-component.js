@@ -23,14 +23,14 @@ const Layout = ({ children, meta }) => {
         <meta property="og:url" content="https://codemaine.vercel.app" />
         <meta property="og:title" content={`${meta.title} | Jermaine Antwi`} />
         <meta property="og:description" content={meta.summary} />
-        <meta property="og:image" content={`http://localhost:3000/api/og?title=${meta.title}`} />
+        <meta property="og:image" content={`https://codemaine.vercel.app/api/og?title=${meta.title}`} />
 
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://codemaine.vercel.app" />
         <meta property="twitter:title" content={`${meta.title} | Jermaine Antwi`} />
         <meta property="twitter:description" content={meta.summary} />
-        <meta property="twitter:image" content={`http://localhost:3000/api/og?title=${meta.title}`} />
+        <meta property="twitter:image" content={`https://codemaine.vercel.app/api/og?title=${meta.title}`} />
       </head>
       <div className='bg-red-50 flex w-full flex-col items-center'>
         <Navbar dark fixed />

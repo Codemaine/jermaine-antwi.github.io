@@ -6,8 +6,8 @@ const defaultTitle = 'Blog; Jermaine Antwi';
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const title = searchParams.get('title') ?? defaultTitle;
-  const imageUrl = `http://localhost:3000/images/projects/blog%20SEO.jpg`;
-  const fontUrl = 'http://localhost:3000/fonts/NewKansasSemiBold.ttf'; 
+  const imageUrl = `https://codemaine.vercel.app/images/projects/blog%20SEO.jpg`;
+  const fontUrl = 'https://codemaine.vercel.app/fonts/NewKansasSemiBold.ttf'; 
 
   try {
     const fontResponse = await fetch(fontUrl);
