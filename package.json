@@ -27,12 +27,14 @@
     "next": "14.2.3",
     "next-mdx-remote": "^5.0.0",
     "nightwind": "^1.1.13",
+    "node-fetch": "^3.3.2",
     "react": "^18",
     "react-dom": "^18",
     "react-email-validator": "^1.0.2",
     "react-loader-spinner": "^6.1.6",
     "shadergradient": "^1.2.14",
-    "three": "^0.154.0"
+    "three": "^0.154.0",
+    "ttfjs": "^0.4.0"
   },
   "devDependencies": {
     "postcss": "^8",
