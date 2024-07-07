@@ -1,8 +1,13 @@
 import { ImageResponse } from 'next/og';
 
+// Define a default title in case none is provided
+const defaultTitle = 'Blog; Jermaine Antwi';
+
 export async function GET(request) {
+  const { searchParams } = new URL(request.url);
+  const title = searchParams.get('title') ?? defaultTitle;
   const imageUrl = `http://localhost:3000/images/projects/blog%20SEO.jpg`;
-  const fontUrl = 'http://localhost:3000/fonts/NewKansasSemiBold.ttf'; // Ensure this URL is correct and accessible
+  const fontUrl = 'http://localhost:3000/fonts/NewKansasSemiBold.ttf'; 
 
   try {
     const fontResponse = await fetch(fontUrl);
@@ -10,15 +15,6 @@ export async function GET(request) {
       throw new Error(`Failed to fetch font file: ${fontResponse.status} ${fontResponse.statusText}`);
     }
     const fontData = await fontResponse.arrayBuffer();
-
-    const { searchParams } = new URL(request.url);
- 
-    // ?title=<title>
-    const hasTitle = searchParams.has('title');
-    const title = hasTitle
-      ? searchParams.get('title')?.slice(0, 100)
-      : `Blog; Jermaine Antwi`;
-
 
     return new ImageResponse(
       (

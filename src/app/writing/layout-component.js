@@ -40,7 +40,7 @@ const Layout = ({ children, meta }) => {
           <div className='flex flex-row items-center gap-3'>
             <Image width={10} height={10} src="/images/pfp.jpg" unoptimized className='h-6 w-6 rounded-full' />
             <div className='flex flex-row gap-2 items-center'>
-              <p className='text-lg text-slate-600'>{moment(meta.dateWritten).format('ll')}</p>
+              <p className='text-lg text-slate-600'>Jul 7, 2024</p>
               <p className='-mt-[4px] text-slate-500'>·</p>
               <p className='text-lg text-slate-600'>{meta.minRead ?? 1} min read</p>
             </div>
