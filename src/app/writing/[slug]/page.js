@@ -13,7 +13,7 @@ const Page = () => {
       <div className='bg-red-50 flex flex-col items-center'>
         <Navbar dark fixed />
         <div className='flex mt-[7vh] sm:mt-[10vh] mb-[12vh] sm:mb-[15vh] flex-col gap-y-6 w-full sm:px-0 px-6 sm:w-3/5'>
-          <p className={`text-[36px] md:text-[48px] min-[1200px]:text-[56px] leading-[1.15] ${headingFont.className} -mb-2`}>The making of your favourite products.</p>
+          <h1 className={`text-[36px] md:text-[48px] min-[1200px]:text-[56px] leading-[1.15] ${headingFont.className} -mb-2`}>The making of your favourite products.</h1>
           <p className='text-[20px] md:text-[22px] min-[1200px]:text-2xl'>Step behind the curtain and discover the hidden intricacies of product creation, as I unveil the stories behind your beloved designs from a freelancer's perspective.</p>
           <div className='flex flex-row items-center gap-3'>
             <Image width={10} height={10} src="/images/pfp.jpg" unoptimized className='h-6 w-6 rounded-full' />
@@ -23,7 +23,7 @@ const Page = () => {
             <p className='text-lg text-slate-600'>5 min read</p>
             </div>
           </div>
-          <Image src='/images/gradient.jpeg' className='w-full mt-6 sm:mt-10 rounded-2xl h-auto aspect-video' width={160} height={90} />
+          <Image src='/images/gradient.jpeg' className='w-full mt-6 sm:mt-10 rounded-2xl h-auto aspect-video' width={500} height={90} />
         </div>
         </div>
         <div className='w-full sm:px-0 px-6 sm:w-3/5 pt-[3vh] sm:pt-[10vh]'>
