@@ -11,8 +11,8 @@
     left: 50%;
     transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
     font-size: 20vmin;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     border-radius: 90% 95% 85% 105%;
     background: #0f0;
     mix-blend-mode: screen;
@@ -68,5 +68,12 @@
     align-items: center;
     justify-content: center;
     font-family: serif;
+    /* overflow: ; */
     background: radial-gradient(circle at 50% 35%, #334455, #000);
+  }
+
+  @media (max-width: 480px) {
+    main {
+      top: 2.5%;
+    }
   }

@@ -34,7 +34,7 @@ const Navbar = ({ dark, fixed }) => {
     };
   return (
     <div className={`mt-auto py-8 px-8 sm:px-24 ${!fixed && 'absolute'} w-full flex flex-row justify-between items-center z-10`}>
-    <Image src="/images/bubu.svg" className={`rotate-12 cursor-pointer hover:rotate-0 ease-in-out duration-200 ${dark && 'invert'}`} width={45} height={45} />
+    <Link href="/"><Image src="/images/bubu.svg" className={`rotate-12 cursor-pointer hover:rotate-0 ease-in-out duration-200 ${dark && 'invert'}`} width={45} height={45} /></Link>
     <div className="hidden md:flex flex-row items-center gap-10">
       {links.map((item) => (
         <p className={`${dark ? 'text-black': 'text-white'} text-xl cursor-pointer`}>{item.label}</p>))}

@@ -11,8 +11,11 @@ import Writing from "@/sections/homepage/Writing";
 import About from "@/sections/homepage/About";
 import Footer from "@/components/footer";
 
+import { useEffect } from "react";
+
 
 export default function Home() {
+  
   return (
     <div>
       <Navbar />
