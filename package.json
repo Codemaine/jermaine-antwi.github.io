@@ -16,6 +16,7 @@
     "@react-three/fiber": "^8.16.8",
     "@types/mdx": "^2.0.13",
     "@types/three": "^0.166.0",
+    "aos": "^3.0.0-beta.6",
     "firebase": "^10.12.2",
     "framer-motion": "^11.2.13",
     "fs": "^0.0.1-security",

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="/images/favicon.svg" sizes="any" />
       <script dangerouslySetInnerHTML={{ __html: nightwind.init() }}></script>
-      <body className={defaultFont.className}>{children}</body>
+      <body className={`${defaultFont.className} bg-white`}>{children}</body>
     </html>
   );
 }

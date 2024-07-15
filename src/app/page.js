@@ -2,7 +2,6 @@
 import Navbar from "@/components/navbar";
 import { headingFont } from "@/fonts";
 import { MeshGradientRenderer } from "@johnn-e/react-mesh-gradient";
-import Image from "next/image";
 import Newsletter from "@/sections/homepage/Newsletter";
 import Projects from "@/sections/homepage/Projects";
 import Skills from "@/sections/homepage/Skills";
@@ -11,15 +10,65 @@ import Writing from "@/sections/homepage/Writing";
 import About from "@/sections/homepage/About";
 import Footer from "@/components/footer";
 
-import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+import { useState, useEffect } from "react";
+import { Bars } from "react-loader-spinner";
 
 export default function Home() {
-  
+  const [loading, setLoading] = useState(true);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    AOS.init();
+    
+    if (!loading) {
+      const timer = setTimeout(() => {
+        setVisible(false);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [loading]);
+
+  const handleGradientPropsUpdate = (props) => {
+    if (props.visible) {
+      setLoading(false);
+    }
+  };
+
   return (
     <div>
+      <style>
+        {`
+  body {
+    overflow: ${visible ? 'hidden' : 'auto'};
+  }
+  .fade {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  .fade-out {
+    opacity: 0;
+  }
+  `}
+      </style>
+      
+  <div className={`h-screen w-screen bg-white absolute z-50 flex items-center justify-center fade ${!visible && 'fade-out'}`}>
+    <Bars
+      height="120"
+      width="120"
+      color="#F24A47"
+      ariaLabel="loading"
+      wrapperStyle={{}}
+      wrapperClass=""
+      visible={true}
+    />
+  </div>
+
       <Navbar />
-      <main className="sm:h-[74vh] h-[50vh] flex flex-col justify-end sm:justify-center items-center">
+      <main className="sm:h-[74vh] h-[50vh] flex flex-col bg-red-100 justify-end sm:justify-center items-center">
         <MeshGradientRenderer
           className="gradient !z-0 w-full opacity-85 sm:h-[74vh] h-[50vh]"
           colors={[
@@ -29,10 +78,11 @@ export default function Home() {
             "#EA4E44",
             "#F696A9"
           ]}
+          onGradientPropsUpdate={handleGradientPropsUpdate}
         />
         <p className={`${headingFont.className} text-white mt-12 sm:pb-0 pb-[15%] z-[1] text-[40px] md:text-[60px] min-[1200px]:text-[80px] leading-[1.1] w-full sm:px-0 px-8 sm:w-[65%]`}>Jermaine Antwi <br />Software Engineer</p>
       </main>
-      <main className="flex flex-col py-16 md:py-32 px-8 min-[1200px]:py-36 items-center">
+      <main data-aos="fade-up" className="flex flex-col py-16 md:py-32 px-8 min-[1200px]:py-36 items-center">
         <p className="text-2xl md:text-3xl w-full md:w-4/6">Senior software engineer & product designer with 10 years of experience. Based in Ghana & London. Available for partnerships & collaborations.
           <br /><br />
           Currently building my first startup, Zest. At Ghana’s newest tech startup, CediRates. Previously, the first engineering hire at Jubay Avenue.</p>
