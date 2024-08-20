@@ -1,7 +1,7 @@
 'use client'
 import Navbar from '@/components/navbar'
 import { headingFont } from '@/fonts'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Markdown from 'markdown-to-jsx'
 import Newsletter from '@/sections/homepage/Newsletter'
@@ -10,6 +10,25 @@ import moment from 'moment/moment'
 
 
 const Layout = ({ children, meta }) => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.setAttribute('data-repo', 'Codemaine/codemaine.github.io');
+    script.setAttribute('data-repo-id', 'R_kgDOHxvnzA');
+    script.setAttribute('data-category', 'Ideas');
+    script.setAttribute('data-category-id', 'DIC_kwDOHxvnzM4ChybI');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-theme', 'light');
+    script.setAttribute('crossorigin', 'anonymous');
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className='flex flex-col items-center'>
       <head>
@@ -45,12 +64,13 @@ const Layout = ({ children, meta }) => {
               <p className='text-lg text-slate-600'>{meta.minRead ?? 1} min read</p>
             </div>
           </div>
-          <Image src='/images/gradient.jpeg' className='w-full mt-6 sm:mt-10 rounded-2xl h-auto aspect-video' width={500} height={90} />
+          <img src={`data:image/png;base64,${meta.coverImage}`} className='w-full mt-6 sm:mt-10 rounded-2xl h-auto aspect-video' width={500} height={90} />
         </div>
       </div>
       <div className='w-full sm:px-0 px-6 sm:w-3/5 pt-[3vh] sm:pt-[10vh]'>
         {children}
       </div>
+      <section className="giscus px-6 md:px-36 md:pt-24 pt-12"></section>
       <Newsletter noTitle />
       <Footer />
     </div>

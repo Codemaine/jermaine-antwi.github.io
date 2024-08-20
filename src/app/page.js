@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div>
-      <style>
+      {/* <style>
         {`
   body {
     overflow: ${visible ? 'hidden' : 'auto'};
@@ -65,10 +65,10 @@ export default function Home() {
       wrapperClass=""
       visible={true}
     />
-  </div>
+  </div> */}
 
       <Navbar />
-      <main className="sm:h-[74vh] h-[50vh] flex flex-col bg-red-100 justify-end sm:justify-center items-center">
+      <main className="sm:h-[74vh] h-[50vh] flex flex-col justify-end sm:justify-center items-center">
         <MeshGradientRenderer
           className="gradient !z-0 w-full opacity-85 sm:h-[74vh] h-[50vh]"
           colors={[
@@ -87,6 +87,8 @@ export default function Home() {
           <br /><br />
           Currently building my first startup, Zest. At Ghana’s newest tech startup, CediRates. Previously, the first engineering hire at Jubay Avenue.</p>
       </main>
+      <div>
+    </div>
       <div className="border-[0.3px] w-full border-slate-200" />
       <Projects />
       <div className="border-[0.3px] w-full border-slate-200" />

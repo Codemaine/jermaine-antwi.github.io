@@ -3,7 +3,6 @@ import { readdir } from 'fs/promises'; // Import readdir from fs/promises
 export async function GET(req) {
   try {
     const slugs = await readdir('./src/app/writing/(blogs)', { withFileTypes: true }); // Corrected path and added await
-    console.log(slugs);
 
     // Filter to get only directories
     const directories = slugs.filter((dirent) => dirent.isDirectory());
@@ -13,8 +12,6 @@ export async function GET(req) {
       directories.map(async (dirent) => {
         const name = dirent.name;
         const { meta } = await import(`@/app/writing/(blogs)/${name}/page.mdx`); // Corrected path and added await
-        console.log(name);
-        console.log(meta);
         return { slug: name, ...meta };
       })
     );
@@ -22,7 +19,6 @@ export async function GET(req) {
     // Sort posts from newest to oldest
     posts.sort((a, b) => +new Date(b.dateWritten) - +new Date(a.dateWritten));
 
-    console.log(posts);
     // Return a Response object with caching headers
     return new Response(JSON.stringify(posts), {
       status: 200,

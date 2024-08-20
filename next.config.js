@@ -2,9 +2,24 @@ const withMDX = require('@next/mdx')()
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include MDX files
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  // Optionally, add any other Next.js config below
+  webpack: (config, { isServer }) => {
+    // Modify the default config here
+
+    config.module.rules.push({
+      test: /\.(mp3|wav|ogg|flac|m4a)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          publicPath: `/_next/static/audio/`,
+          outputPath: `${isServer ? '../' : ''}static/audio/`,
+          esModule: false,
+        },
+      },
+    })
+    return config
+  },
 }
  
 module.exports = withMDX(nextConfig)

@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import nightwind from "nightwind/helper";
+import { AudioProvider } from "@/context/AudioContext";
 
 const defaultFont = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -14,7 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="/images/favicon.svg" sizes="any" />
       <script dangerouslySetInnerHTML={{ __html: nightwind.init() }}></script>
-      <body className={`${defaultFont.className} bg-white`}>{children}</body>
+      <body className={`${defaultFont.className} bg-white`}>
+        <AudioProvider>{children}</AudioProvider></body>
     </html>
   );
 }
